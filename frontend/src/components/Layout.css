@@ -1,0 +1,92 @@
+.container{
+    border:1px solid green;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap:20px;
+    rotate: 270deg;
+    margin-top: -120px;
+    padding:10px;
+    color:white;
+    text-align:center;
+}
+.child{
+    border:1px solid red;
+    width:60px;
+    height:60px;
+    rotate: 90deg;
+    background-color: green;
+}
+.gap{
+    border:1px solid green;
+    width:60px;
+    height:60px;
+    margin-right: 60px;
+    rotate: 90deg;
+    background-color: green;
+}
+
+.gap1,.child1,.blue1{
+    background-color: red;
+    rotate: 90deg;
+    width:60px;
+    height:60px;
+}
+.gap1{
+    background-color: red;
+    margin-right: 60px;
+    rotate: 90deg;
+}
+.blue1{
+    background-color: blue;  
+}
+
+
+@media (max-width:650px) {
+    .container{
+        gap:5px;
+        font-size: 10px;
+        padding:5px;
+        margin-top: 20px;
+    }
+    .child{ 
+        width:20px;
+        height:20px;  
+    }
+    .gap{
+        width:20px;
+        height:20px;
+        margin-right: 10px;
+    }
+    .gap1,.child1,.blue1{
+        width:20px;
+        height:20px;
+    }
+    .gap1{
+        margin-right: 20px;  
+    }
+}
+
+@media (min-width:651px ) and (max-width:1000px){
+    .container{
+        gap:10px;
+        margin-top: 0px;
+    }
+    .child{ 
+        width:40px;
+        height:40px;  
+    }
+    .gap{
+        width:40px;
+        height:40px;
+        margin-right: 20px;
+    }
+
+    .gap1,.child1,.blue1{
+        width:40px;
+        height:40px;
+    }
+    .gap1{
+        margin-right: 40px;  
+    }
+
+}

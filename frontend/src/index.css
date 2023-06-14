@@ -1,0 +1,27 @@
+.parent{
+  width:40%;
+  margin: auto;
+ 
+}
+.parent>div{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.ind{
+  display: flex;
+  gap:40px;
+  margin: 20px; 
+}
+
+@media (max-width:650px){
+  .parent{
+      width:80%;   
+  }
+  .ind{
+      display: flex;
+      gap:20px;
+      margin: 20px;
+      font-size: 12px;
+  }
+}
